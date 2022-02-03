@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-header{
+   width: 100%;
+   height: 100vh;
+}
+header{
+    background-color: rgb(0,0,128);  
+}
+main{
+    background-color: rgb(0,0,128);
+    width: 100%;
+    height: 100vh;
+}
+.box-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box-obras{
+    border: 7px solid #FFFF00 ;
+    width: 20%;
+    height: 20%;
+}
+.box-dialogo{
+    background-color: rgb(169,169,169, 0.2);
+    border-radius: 30px;
+    width: 40%;
+    height: 30vh;
+}
