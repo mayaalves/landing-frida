@@ -1,54 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Playfair+Display&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Playfair+Display&family=Roboto:wght@100;300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.box-header{
-   width: 100%;
-   height: 100vh;
+h2, p{
+    color: rgb(202, 202, 202);
 }
-header{
-    background-color: rgb(0,0,128);  
+.background-box{
+    background-image: url("assets/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-main{
-    background-color: rgb(0,0,128);
+.coluna-inicial{
+    display: flex;
+    flex-direction: column;
+}
+.coluna-meio{
+    display: flex;
+    flex-direction: column;
+}
+.coluna-fim{
+    display: flex;
+    flex-direction: column;
+}
+.vertical{
+    width: 35vh;
+    height: 55vh;
+    margin: 5vh;
+}
+.quadrado{
+    width: 35vh;
+    height: 35vh;
+    margin: 5vh;
+}
+body{
+    background-color: #0047ab;
     width: 100%;
     height: 100%;
+}
+h2{
+    font-family: Playfair Display;
+    font-size: 3vh;
+}
+p{
+    font-family: montserrat;
+    font-size: 2vh;
 }
 .box-display{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .box-obras{
     border: 7px solid #FFFF00 ;
     width: 35vh;
     height: 35vh;
+    z-index: 2;
+}
+.box-obras:hover{
+    transform: scale(1.1);
 }
 .box-dialogo{
-    background-color: rgb(169,169,169, 0.2);
-    border-radius: 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 0;
     width: 70vh;
     height: 30vh;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .box-master{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 5vh;
 }
 .display-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .obras-box{
     border: 7px solid #f0f ;
     width: 35vh;
     height: 35vh;
+    z-index: 2;
+}
+.obras-box:hover{
+    transform: scale(1.1);
 }
 .dialogo-box{
-    background-color: rgb(169,169,169, 0.2);
-    border-radius: 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 0;
     width: 30vh;
     height: 70vh;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
