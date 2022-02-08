@@ -34,11 +34,19 @@ h2, p{
     width: 35vh;
     height: 55vh;
     margin: 5vh;
+    border: 7px solid #a2124a
+}
+.vertical:hover{
+    transform: scale(1.1);
 }
 .quadrado{
     width: 35vh;
     height: 35vh;
     margin: 5vh;
+    border: 7px solid #FFFF00
+}
+.quadrado:hover{
+    transform: scale(1.1);
 }
 body{
     background-color: #0047ab;
@@ -53,11 +61,19 @@ p{
     font-family: montserrat;
     font-size: 2vh;
 }
-.box-display{
+.box-start{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 25vh;
+}
+.box-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25vh;
 }
 .box-obras{
     border: 7px solid #FFFF00 ;
@@ -80,22 +96,21 @@ p{
     padding: 3vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 .box-master{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5vh;
 }
 .display-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 12vh;
 }
 .obras-box{
-    border: 7px solid #f0f ;
+    border: 7px solid #a2124a ;
     width: 35vh;
     height: 35vh;
     z-index: 2;
@@ -116,4 +131,40 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.creditos{
+    margin: 5vh;
+}
+@media only screen and (max-width: 768px){
+    .background-box{
+        display: none;
+    }
+    .coluna-inicial{
+        display: none;
+    }
+    .coluna-meio{
+        display: none;
+    }
+    .coluna-fim{
+        display: none;
+    }
+    body{
+        background-color: #0047ab;
+        background-image: linear-gradient(328deg, #0047ab 0%, #a2124a 100%);
+    }
+    .box-start{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 3vh;
+    }
+    .box-end{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .display-box{
+        margin: auto;
+        margin-top: 10vh;
+    }
 }
